@@ -1,0 +1,56 @@
+h1{
+    color: blue;
+    font-size: 30px;
+}
+
+p{
+    color: red;
+    font-size: 8px;
+}
+
+span{
+    color:green ;
+    font-size: 15px;
+}
+
+h1:hover{
+    color: bisque;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+p:hover{
+    color: aqua;
+    cursor: grab;
+    font-weight: 100;
+}
+
+span:hover{
+    color: blueviolet;
+    cursor: copy;
+    font-weight: bold;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px black;
+
+}
+
+.divhome{
+    display:flex;
+    flex-direction: row;
+
+}
+.divprincipale{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.h2divhome{
+    margin-left: 2rem;
+}
+
+
