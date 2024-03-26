@@ -1,0 +1,97 @@
+h1{
+    color: blue;
+    font-size: 30px;
+}
+
+p{
+    color: red;
+    font-size: 8px;
+}
+
+span{
+    color:green ;
+    font-size: 15px;
+}
+
+h1:hover{
+    color: bisque;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+p:hover{
+    color: aqua;
+    cursor: grab;
+    font-weight: 100;
+}
+
+span:hover{
+    color: blueviolet;
+    cursor: copy;
+    font-weight: bold;
+}
+.principale.secondaire1{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.principale.secondaire1 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+@media only screen and ( max-width: 102px){
+    .secondaire1:nth-child(1),
+    .secondaire1:nth-child(2){
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .secondaire1:nth-child(1) img,
+    .secondaire1:nth-child(2) img{
+        flex-basis: calc(33.33% - 10px);
+    }
+
+    .secondaire1:nth-child(3),
+    .secondaire1:nth-child(4){
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .secondaire1:nth-child(3) img,
+    .secondaire1:nth-child(4) img{
+        flex-basis: calc(33.33% - 10px);
+    }
+}
+/*pour telephones*/
+@media only screen and (max-width:768px){
+    .secondaire1{
+        flex-wrap:wrap ;
+        justify-content: space-around;
+    }
+
+    .secondaire1 img{
+        flex-basis: calc(50% - 10px);
+    }
+    
+}
+
+.divhome{
+    display:flex;
+    flex-direction: row;
+
+}
+.divprincipale{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.h2divhome{
+    margin-left: 2rem;
+}
+
+
